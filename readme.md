@@ -2,8 +2,6 @@
 
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/ALIBRAGIMOV/Grader)
 ![GitHub last commit](https://img.shields.io/github/last-commit/ALIBRAGIMOV/Grader)
-![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/ALIBRAGIMOV/Grader)
-![Docker Pulls](https://img.shields.io/docker/pulls/ALIBRAGIMOV/Grader)
 
 ## Table of Contents
 
