@@ -1,0 +1,13 @@
+{
+  "external_grader": "https://127.0.0.1:8021/api/v1/grader",
+  "files": [
+    {
+      "label": "hw1_game/main.go",
+      "filename": "main.go"
+    }
+  ],
+  "grader_payload": {
+    "container": "golangcourse_final",
+    "partId": "HW1_game"
+  }
+}

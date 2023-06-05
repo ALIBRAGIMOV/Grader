@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <title>hw1</title>
+  <style>
+    .card {
+      width: 500px;
+      margin: 0 auto;
+    }
+    .navbar{
+      background-image: linear-gradient(#712cf9, #712cf9);
+      background-color: transparent;
+    }
+    .title {
+      color: white;
+      font-size: 20px;
+      font-weight: 200;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top shadow">
+  <div class="container-xxl">
+    <a class="navbar-brand" style="font-size: 30px" href="#">
+      🦉
+    </a>
+    <span class="title">grader</span>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: flex-end">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active fw-semibold" aria-current="page" style="color: white" href="#">📝TASK</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <button type="button" class="btn btn-outline-light">Log In</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container d-flex justify-content-center align-items-center vh-100">
+  <div class="bg-body-tertiary p-4 rounded">
+    <p>Домашнее задание №1</p>
+    <p>Тема: текстовая игра</p>
+    <p>Основная цель задания - поупражняться в моделировании объектов. Сверх-сверх детальное решение по шагам будет позже.</p>
+    <p>Когда-то давно, когда компьютеры были большими, интернет - медленным, а графических ускорителей не было вовсе, уже существовали многопользовательские игры. Они имели текстовый интерфейс и назывались MUD, Multi User Dungeon.</p>
+    <p>Мы пишем простую игру, которая реагирует на команды игрока, возвращая нужный ответ. Тут можно начать смотреть команды-ответы в файле main_test.go</p>
+    <p>Игровой мир обычно состоит из комнат, где может происходить какое-то действие.
+      Так же у нас есть игрок.
+      Как у игрока, так и у команты есть состояние.
+      Функция <code>initGame</code> делает нового игрока и задаёт ему начальное состояние, а так же сбрасывает состояние комнат.
+      Функция <code>handleCommand</code> получает команду и реализует логику на основе этой команды.
+      В данной версии можно обойтись глобальными переменными для игрока и мира ( команат ).</p>
+    <p>Список команд:</p>
+    <ul>
+      <li>осмотреться - выводит текущее окружение, на основе комнаты в которой находится игрок</li>
+      <li>идти - перемещает игрока в другую комнату, если это возможно (с этим будет логика)</li>
+      <li>надеть - позволяет надеть рюкзак</li>
+      <li>взять - кладет предмет в рюкзак</li>
+      <li>применить - применяет предмет из рюкзака к чему-то (а у этого чего-то отрабатывает логика) - используется в открытии двери</li>
+    </ul>
+    <p>Список комнат:</p>
+    <ul>
+      <li>кухня - тут есть предметы и квест</li>
+      <li>коридор - тут есть дверь, для которой нужен ключе</li>
+      <li>комната - тут есть предметы</li>
+      <li>улица - финальная точка игры :)  </li>
+    </ul>
+    <p>Команда в handleCommand парсится как
+      $команда $параметр1 $параметр2 $параметр3
+      <a href="https://golang.org/pkg/strings/#Split">https://golang.org/pkg/strings/#Split</a> вам в помощь</p>
+    <div class="mb-3">
+      <label for="formFile" class="form-label badge bg-primary text-wrap">Загрузите домашку</label>
+      <input class="form-control" type="file" id="formFile">
+    </div>
+    <button type="button" class="btn btn-primary btn-sm">Отправить</button>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
